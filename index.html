@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <title>Ajax Jquery</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="alert alert-info">&lt;-- AJAX -- PHP -- BOOTSTRAP 5 -- JQUERY --&gt;</h1>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <form id="myform">
+                    <h3 class="alert alert-primary text-center">Add/Update Form</h3>
+                    <input type="hidden" id="stdid">
+                    <label for="name" class="ms-1">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                    <label for="email" class="ms-1">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    <label for="pass" class="ms-1">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Enter Password">
+                    <button class="btn btn-outline-success mt-3" id="saveBtn">Save</button>
+                    <button class="btn btn-outline-danger mt-3" id="clearBtn">Clear</button>
+                </form>
+                <div id="msg"></div>
+            </div>
+            
+            <div class="col-sm-7">
+                <h3 class="alert alert-primary">All Students Record</h3>
+                <table class="table table-striped text-center alert alert-info">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mydata"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/jqAjax.js"></script>
+</body>
+</html>
